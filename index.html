@@ -7,10 +7,18 @@
 </head>
 <body>
 <h1>Google reCAPTCHA test</h1>
-<form action="javascript:alert(grecaptcha.getResponse());">
+<form method="post">
       <div class="g-recaptcha" data-sitekey="6LdBhm8UAAAAACq4JBJycvfTFXHrSS-qimOy7gSG"></div>
       <br>
-      <input type="submit" value="getResponse">
+      <input type="submit" value="OK" onclick="teste()">
 </form>
 </body>
 </html>
+
+<script>   
+      
+      function teste(){
+            var x = grecaptcha.getResponse();
+            alert(x);
+      };
+</script>
