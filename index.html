@@ -7,12 +7,10 @@
 </head>
 <body>
 <h1>Google reCAPTCHA test</h1>
-<p>Adds the vanilla <a href="https://www.google.com/recaptcha">reCAPTCHA</a> widget, for testing...</p>
-<div class="g-recaptcha" data-sitekey="6LdBhm8UAAAAACq4JBJycvfTFXHrSS-qimOy7gSG"></div>
+<form action="javascript:alert(grecaptcha.getResponse());">
+      <div class="g-recaptcha" data-sitekey="6LdBhm8UAAAAACq4JBJycvfTFXHrSS-qimOy7gSG"></div>
+      <br>
+      <input type="submit" value="getResponse">
+</form>
 </body>
 </html>
-
-<script>
-  var response = grecaptcha.getResponse();
-  console.log(response);
-</script>
